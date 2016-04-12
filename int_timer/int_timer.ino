@@ -13,8 +13,8 @@ int state = 0;
 const int stateFilling = 0;
 const int stateEmptying = 1;
 
-// Tank Capacity; 12.5 Imperial Gallons
-const float tankCapacity = 12.5;
+// Tank Capacity; 19.5 Imperial Gallons
+const float tankCapacity = 19.5;
 
 // Relay sensor pin
 int relayPin = A0;
@@ -37,7 +37,9 @@ void setup() {
   lcd.begin(16, 2);
   
   lcd.setCursor(0, 0);
-  lcd.print("Bonjour Lucien !!!");
+  lcd.print("Bonjour Lucien !");
+  lcd.setCursor(0, 1);
+  lcd.print("19.5 Imp Gallon");
   
   // Write the cumulative total
   lcd.setCursor(0, 1);
